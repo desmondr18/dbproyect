@@ -1,0 +1,44 @@
+*{
+    background-color: #e3dada;
+}
+table {
+    width: 1000px; /* Establecemos un ancho para la tabla */
+    border-collapse: collapse; /* Eliminamos los bordes entre las celdas */
+  }
+  td {
+    border: 1px solid black;
+  }
+  tr:first-child td:nth-last-of-type(2),
+  tr:first-child td:last-child {
+  width: 30px; /* Ancho de las últimas dos celdas */
+  background-color:#003366;
+}
+  /* Seleccionamos la primera columna */
+  th:first-child, td:first-child {
+    background-color: #003366; /* Color azul fuerte */
+    color: white; /* Texto en blanco */
+  }
+  
+  /* Seleccionamos las demás columnas */
+  th:not(:first-child), td:not(:first-child) {
+    background-color: #99CCFF; /* Color azul claro */
+  }
+  
+  /* Seleccionamos todas las filas */
+  tr {
+    border-bottom: 1px solid #ddd; /* Añadimos un borde inferior a las filas */
+  }
+  
+  /* Seleccionamos las imágenes de los botones */
+  button {
+    background-color: #0066FF; /* Gradiente de azul a azul oscuro */
+    color: white;
+    border-color: #0066FF;
+    box-shadow: #0066FF;
+  }
+  
+  img {
+    background-color: #0066FF;
+    width: 20px;
+    height: 20px;
+  }
