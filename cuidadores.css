@@ -40,5 +40,20 @@ table {
   img {
     background-color: #0066FF;
     width: 20px;
-    height: 20px;
+    height: 20px; 
+  #etiquetaLeyenda {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #miBoton:hover #etiquetaLeyenda {
+    display: block;
+  }
   }
