@@ -6,10 +6,36 @@
     <title>Agregar cuidador</title>
 </head>
 <body>
-    <input type="text">
-    <input type="text">
-    <input type="number">
-    <input type="text">
-    <button></button>
+    <p>Por favor llena este formulario con los datos indicados para registrarte</p>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <form>
+            <label>Nombre</label>
+            <input type="text">
+            <label>Primer pellido</label>
+            <input type="text">
+            <label>Segundo pellido</label>
+            <input type="text">
+            <br />
+            <label>Numero de contacto</label>
+            <input type="tel">
+            <label>Correo electronico</label>
+            <input type="email"/>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Datos laborales</legend>
+        <form>
+            <label>Tipo de cuidador</label>
+            <input type="text">
+            <label>Horario disponible</label>
+            <select name="Horario">
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="nocturno">Nocturno</option>
+                <option value="rolado">Rolado</option>
+            </select>
+        </form>
+    </fieldset>
 </body>
 </html>
