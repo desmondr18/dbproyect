@@ -1,0 +1,80 @@
+/* Seleccionamos todos los fieldsets */
+fieldset {
+    /* Añadimos un borde para diferenciarlos */
+    border: 1px solid #f7f7f7;
+    /* Añadimos un margen para separarlos */
+    margin: 10px;
+    /* Redondeamos las esquinas */
+    border-radius: 5px;
+    border-color: black;
+    /* Añadimos un poco de sombra */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+    width: 80%;
+  }
+  
+  img{
+    width: 20px;
+    height: 20px; 
+  }
+  /* Seleccionamos las leyendas */
+  legend {
+    /* Cambiamos el color de la leyenda */
+    color: #333;
+    /* Añadimos un margen inferior */
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    background-color:white;
+  }
+  
+  /* Seleccionamos los formularios */
+  form {
+    /* Cambiamos el color de fondo */
+    background-color: #f7f7f7;
+    
+  }
+  
+  /* Seleccionamos las etiquetas */
+  label {
+    background-color: white;
+    /* Cambiamos el tamaño de la fuente */
+    font-size: 16px;
+    /* Añadimos un margen inferior */
+    
+  }
+  
+  /* Seleccionamos los inputs */
+  input {
+    /* Añadimos un borde */
+    border: 1px solid #ccc;
+    /* Añadimos un poco de relleno */
+    padding: 5px;
+    /* Redondeamos las esquinas */
+    border-radius: 3px;
+  }
+  
+  /* Seleccionamos los selects */
+  select {
+    /* Añadimos un borde */
+    border: 1px solid #ccc;
+    /* Añadimos un poco de relleno */
+    padding: 5px;
+    /* Redondeamos las esquinas */
+    border-radius: 3px;
+  }
+  *{
+    background-color: #e3dada;
+    line-height: 1.5; /* Añadimos espacio entre líneas */
+  
+  }
+  button{
+    padding-left: .5px;
+    height: 25px;
+    width: 25px;
+  }
+  h1{
+    background-color: red;
+    width: 80%;
+    font-size: 15px;
+  }

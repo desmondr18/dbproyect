@@ -4,38 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar cuidador</title>
+    <link rel="stylesheet" href="cuidadoresadd.css">
 </head>
 <body>
     <p>Por favor llena este formulario con los datos indicados para registrarte</p>
+    
     <fieldset>
-        <legend>Datos personales</legend>
-        <form>
+        <legend>Datos del cuidador</legend>
+        <form action="cuidadoresadd.php" method="post">
             <label>Nombre</label>
-            <input type="text">
-            <label>Primer pellido</label>
-            <input type="text">
-            <label>Segundo pellido</label>
-            <input type="text">
-            <br />
+            <input type="text"name="nombre">
             <label>Numero de contacto</label>
-            <input type="tel">
-            <label>Correo electronico</label>
-            <input type="email"/>
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>Datos laborales</legend>
-        <form>
+            <input type="tel" nombre="telefono">
+           <br><br> 
+           <label>Correo electronico</label>
+            <input type="email" name="correo"/>
             <label>Tipo de cuidador</label>
-            <input type="text">
+            <input type="text" name="tipo">
             <label>Horario disponible</label>
-            <select name="Horario">
-                <option value="matutino">Matutino</option>
-                <option value="vespertino">Vespertino</option>
-                <option value="nocturno">Nocturno</option>
-                <option value="rolado">Rolado</option>
-            </select>
-        </form>
+            <input type="text" name="horario">
+            <label><button type="submit" name="enviar" onclick="redireccionar2()"><img src="send.png" alt=""></button></label>
+            </form>
+        <h1>¡Pulse el boton de enviar hasta que termine de rellenar todos los campos!</h1>    
     </fieldset>
+    <script src="cuidadores.js"></script>
 </body>
 </html>
