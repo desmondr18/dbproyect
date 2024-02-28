@@ -5,13 +5,6 @@ $puerto = "5432";
 $usuario = "postgres";
 $contrasena = "postgres";
 $base_datos = "proyectodb";
-
-$host = "localhost";
-$puerto = "5432";
-$usuario = "postgres";
-$contrasena = "postgres";
-$base_datos = "proyectodb";
-
 try {
   $conexion = pg_connect("host=$host port=$puerto dbname=$base_datos user=$usuario password=$contrasena");
   echo "Conexión exitosa!";
@@ -20,13 +13,15 @@ try {
   }
 
 if (isset($_POST['enviar'])){
+
   $nombre = $_POST['nombre'];
+  $tipo = $_POST['tipo'];
   $telefono = $_POST['telefono'];
   $correo = $_POST['correo'];
-  $tipo = $_POST['tipo'];
   $horario = $_POST['horario'];
+
   $consulta = "INSERT INTO cuidadores (nombre, tipo, telefono, correo, horario)
-  VALUES ('$nombre', '$tipo', '$telefono', '$correo', '$horario')";
+  VALUES ('$nombre', '$tipo', $telefono, '$correo', '$horario')";
 
   $resultado = pg_query($conexion, $consulta);
   // **Verifica el resultado de la consulta**
